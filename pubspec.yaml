@@ -20,3 +20,5 @@ flutter:
   uses-material-design: true
   assets:
     - lib/imagens/starsbackground.png
+    - lib/imagens/android-icon.png
+    - lib/imagens/Group 71.png

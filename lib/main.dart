@@ -27,20 +27,36 @@ class MainApp extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  const SizedBox(
+                      height: 20), // Espaço entre o título e as imagens
+                  Image.asset(
+                    'lib/imagens/Group 71.png',
+                    width: 1000,
+                    height: 100,
+                    fit: BoxFit.contain, // ou BoxFit.cover
+                  ),
+                  const SizedBox(
+                      height: 20), // Espaço entre as imagens e o QR code
                   const Text(
-                    'Clarity QR code',
+                    'QR code',
                     style: TextStyle(
                       fontSize: 40.0,
                       color: Color.fromARGB(255, 78, 78, 78),
                     ),
                   ),
                   const SizedBox(
-                      height: 20), // Espaço entre o título e o QR code
+                      height: 20), // Espaço entre as imagens e o QR code
                   QrImageView(
                     data: 'https://www.google.com',
                     version: QrVersions.auto,
                     size: 200.0,
                     backgroundColor: Colors.white,
+                  ),
+                  const SizedBox(height: 30),
+                  Image.asset(
+                    'lib/imagens/android-icon.png',
+                    width: 100,
+                    height: 100,
                   ),
                 ],
               ),
